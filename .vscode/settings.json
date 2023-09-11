@@ -1,0 +1,18 @@
+{
+	"prettier.singleAttributePerLine": true,
+	"javascript.format.semicolons": "insert",
+	"prettier.semi": true,
+	"prettier.useTabs": true,
+	"prettier.printWidth": 80,
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"html.format.enable": true,
+	"javascript.format.enable": true,
+	"css.format.enable": true,
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"editor.tabSize": 2,
+	"editor.renderWhitespace": "selection",
+	"editor.wordWrap": "on"
+}

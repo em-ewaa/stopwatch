@@ -22,16 +22,29 @@ body {
 	justify-content: center;
 }
 .stopwatch {
+	margin: 150px 0 50px 0;
 	position: relative;
-	font-size: 40rem;
 	flex-basis: 100%;
 	text-align: center;
+}
+svg {
+	stroke-linejoin: round;
+	stroke-linecap: round;
+}
+svg line {
+	transform-box: fill-box;
+	transform-origin: 0% 100%;
+}
+
+svg .click {
+	transform-box: fill-box;
+	transform-origin: center;
 }
 
 .time-box {
 	position: absolute;
-	top: 62%;
-  left: 50%;
+	top: 60%;
+	left: 50%;
 	padding: 15px 30px;
 	border: 3px solid black;
 	border-radius: 15px;
@@ -39,10 +52,11 @@ body {
 	background-color: white;
 	font-size: 3.5rem;
 	margin: auto;
-  transform: translate(-50%, -50%) scale(0);
+	transform: translate(-50%, -50%) scale(0);
 	transform-origin: center center;
 	transition: transform 0.3s ease;
 }
+
 .start-btn,
 .reset-btn {
 	display: block;
@@ -83,6 +97,10 @@ body {
 	transform: translate(-50%, -50%) scale(1);
 }
 
+.appears {
+	animation: appears 0.2s;
+	transform: scale(1);
+}
 @keyframes appears {
 	75% {
 		transform: translate(-50%, -50%) scale(1.5);
@@ -92,7 +110,11 @@ body {
 	}
 }
 
-.appears {
-	animation: appears 0.2s;
-	transform: scale(1);
+@keyframes arrow {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- link font -->
+  <link rel="stylesheet" href="./">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: #333333;
+    }
+
+    svg {
+      stroke: black;
+      stroke-width: 1;
+      /* border: 1px black solid; */
+      fill: none;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+
+    circle {
+      stroke: #636363;
+      stroke-width: 3px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div>
+    <svg viewBox="0 0 50 50" width="500" height="500">
+
+      <path stroke="#d3d3d3" fill="#d3d3d3" d="
+        M 22.5 15
+        v -5
+        h 5
+        v 5
+        z
+
+        M 33 16
+        l 2.5 -2.5
+        a 1 1 0 0 1 1 0
+        l 4.3 4.3
+        a 1 1 0 0 1 0 1
+        l -2.5 2.5
+        z
+
+        M 17 16
+        l -2.5 -2.5
+        a 1 1 0 0 0 -1 0
+        l -4.3 4.3
+        a 1 1 0 0 0 0 1
+        l 2.5 2.5
+        z
+        " />
+      <path stroke="#636363" fill="#636363" d="
+        M 21 6 
+        h 8
+        a 1 1 0 0 1 1 1
+        v2
+        a 1 1 0 0 1 -1 1
+        h -8
+        a 1 1 0 0 1 -1 -1
+        v -2
+        a 1 1 0 0 1 1 -1
+        " />
+
+      <circle cx="25" cy="30" r="15" fill="white" />
+      <!-- <rect stroke="#636363" fill="#636363"x="20" y="6.5" height="4" width="10"/> -->
+
+      <path stroke="#d3d3d3" stroke-width="3px" d="
+        M 25 20 v 1.5
+        M 25 40 v -1.5
+        M 15 30 h 1.5
+        M 35 30 h -1.5
+        M 32.5 37.5 l -1 -1
+        M 17.5 37.5 l 1 -1
+        M 17.5 22.5 l 1 1
+        M 32.5 22.5 l -1 1
+        " />
+
+      <line stroke="#f8312f" stroke-width="3px" x1="25" y1="30" x2="32.5" y2="22.5" />
+    </svg>
+
+  </div>
+</body>
+
+</html>
+
+<!-- l 3 -3
+a 0.5 0.5 0 0 1 1 1 -->
